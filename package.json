@@ -4,9 +4,24 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "prepare": "snowpack",
+    "snowpack": "rm -rf web_modules && snowpack --include src/**/*.js",
+    "start": "serve .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "serve": "^11.3.0",
+    "snowpack": "^1.5.2"
+  },
+  "dependencies": {
+    "prosemirror-example-setup": "^1.1.2",
+    "prosemirror-model": "^1.9.1",
+    "prosemirror-schema-basic": "^1.1.2",
+    "prosemirror-schema-list": "^1.1.2",
+    "prosemirror-state": "^1.3.2",
+    "prosemirror-view": "^1.14.2"
+  }
 }
